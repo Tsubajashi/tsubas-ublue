@@ -74,13 +74,6 @@ screens:
           - Firefox: org.mozilla.firefox
           - Flatseal Permissions Manager: com.github.tchx84.Flatseal
           - Blackbox Terminal: com.raggesilver.BlackBox
-        Other Web Browsers:
-          description: Additional browsers to complement Firefox
-          default: false
-          packages:
-          - Brave: com.brave.Browser
-          - Google Chrome: com.google.Chrome
-          - Microsoft Edge: com.microsoft.Edge
         Gaming:
           description: "Rock and Stone!"
           default: true
@@ -147,6 +140,11 @@ screens:
           default: true
           packages:
           - Cockpit Client: org.cockpit_project.CockpitClient
+        Development Tools:
+          description: Utilities for Development
+          default: true
+          packages:
+          - VS Code: com.visualstudio.code
 
   final-screen:
     source: yafti.screen.title
