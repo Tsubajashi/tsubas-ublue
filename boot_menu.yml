@@ -1,5 +1,5 @@
 ublue_variants:
-  - label: tsubajashi/custom-ublue
+  - label: tsubajashi/tsubas-ublue
     ks: /kickstart/ublue-os.ks
     flavors:
-      - label: custom-ublue
+      - label: tsubas-ublue
