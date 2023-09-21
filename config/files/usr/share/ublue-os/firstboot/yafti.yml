@@ -5,7 +5,7 @@ screens:
   first-screen:
     source: yafti.screen.title
     values:
-      title: "Welcome to uBlue (Alpha)"
+      title: "Welcome to uBlue (Alpha, Adapted by Tsubajashi)"
       icon: "/path/to/icon"
       description: |
         This guided installer will help you get started with your new system.
@@ -73,19 +73,17 @@ screens:
           packages:
           - Firefox: org.mozilla.firefox
           - Flatseal Permissions Manager: com.github.tchx84.Flatseal
-          - Blackbox Terminal: com.raggesilver.BlackBox
         Gaming:
           description: "Rock and Stone!"
           default: true
           packages:
           - Bottles: com.usebottles.bottles
           - Heroic Games Launcher: com.heroicgameslauncher.hgl
-          - RetroArch: org.libretro.RetroArch
           - Cartridges: hu.kramo.Cartridges
           - MangoHUD for most Flatpaks: org.freedesktop.Platform.VulkanLayer.MangoHud/23.08
           - MangoHUD for Steam: com.valvesoftware.Steam.Utility.MangoHud/x86_64/stable
           - MangoHUD for older Flatpaks: org.freedesktop.Platform.VulkanLayer.MangoHud/22.08
-          - Proton Updater (GTK) for Steam: com.vysp3r.ProtonPlus
+          - Proton Updater (QT) for Steam: net.davidotek.pupgui2
         Office:
           description: Bow to Capitalism
           default: false

@@ -4,8 +4,8 @@ name: tsubas-ublue
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/onyx-nvidia
-image-version: 39 # latest is also supported if you want new updates ASAP
+base-image: ghcr.io/ublue-os/kinoite-nvidia
+image-version: 38 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -51,7 +51,7 @@ modules:
         # in your custom.just (added by default) or local justfile
       - ublue-os-wallpapers
       # - ublue-update # https://github.com/ublue-os/ublue-update
-      - dconf-update-service # a service unit that updates the dconf db on boot
+      # - dconf-update-service # a service unit that updates the dconf db on boot
       # - devpod # https://devpod.sh/ as an rpm
 
   - type: yafti

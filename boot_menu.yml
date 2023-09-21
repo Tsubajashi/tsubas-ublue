@@ -1,5 +1,5 @@
 ublue_variants:
   - label: tsubajashi/tsubas-ublue
-    ks: /kickstart/ublue-os.ks
+    ks: /kickstart/ublue-os-nvidia.ks
     flavors:
       - label: tsubas-ublue
