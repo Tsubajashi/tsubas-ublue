@@ -22,8 +22,8 @@ jobs:
         id: isogenerator
         with:
           image-name: ${{ github.event.repository.name }}
-          installer-repo: releases
-          installer-major-version: 38
+          installer-repo: development
+          installer-major-version: 39
           boot-menu-path: boot_menu.yml
       - name: install github CLI
         run: |
