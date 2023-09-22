@@ -5,7 +5,7 @@
 
 # Install Bazzite-Arch for Gaming
 install-bazzite-arch:
-  distrobox create --nvidia --image ghcr.io/ublue-os/bazzite-arch-gnome --name bazzite-arch && \
+  distrobox create --nvidia --image ghcr.io/ublue-os/bazzite-arch --name bazzite-arch && \
   echo 'Exporting applications...' && \
   distrobox-enter -n bazzite-arch -- 'bash -c "sudo locale-gen && distrobox-export --app steam && distrobox-export --app lutris && distrobox-export --app protontricks && mkdir -p $HOME/.steam && distrobox-export --bin /usr/bin/steamcmd --export-path ~/.steam && mv $HOME/.steam/steamcmd $HOME/.steam/steamcmd.sh"' && \
   echo 'Starting Steam...' && \
