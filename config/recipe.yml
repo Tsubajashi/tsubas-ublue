@@ -39,8 +39,6 @@ modules:
       - cockpit-system
       - libvirt
       - lxc
-      - lxd-agent
-      - lxd
       - qemu-char-spice
       - qemu-device-display-virtio-gpu
       - qemu-device-display-virtio-vga
