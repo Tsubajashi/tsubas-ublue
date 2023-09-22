@@ -37,6 +37,19 @@ modules:
       - cockpit-selinux
       - cockpit-storaged
       - cockpit-system
+      - libvirt
+      - lxc
+      - lxd-agent
+      - lxd
+      - qemu-char-spice
+      - qemu-device-display-virtio-gpu
+      - qemu-device-display-virtio-vga
+      - qemu-device-usb-redirect
+      - qemu-img
+      - qemu-system-x86-core
+      - qemu-user-binfmt
+      - qemu-user-static
+      - qemu
       - virt-manager
       - podman-plugins
     remove:
