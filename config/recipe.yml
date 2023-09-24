@@ -4,7 +4,7 @@ name: tsubas-ublue
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite-nvidia
+base-image: ghcr.io/ublue-os/silverblue-nvidia
 image-version: 38 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -29,7 +29,6 @@ modules:
       - system76-scheduler
       - neofetch
       - cockpit-bridge
-      - cockpit-machines
       - cockpit-networkmanager
       - cockpit-ostree
       - cockpit-pcp
@@ -37,18 +36,6 @@ modules:
       - cockpit-selinux
       - cockpit-storaged
       - cockpit-system
-      - libvirt
-      - lxc
-      - qemu-char-spice
-      - qemu-device-display-virtio-gpu
-      - qemu-device-display-virtio-vga
-      - qemu-device-usb-redirect
-      - qemu-img
-      - qemu-system-x86-core
-      - qemu-user-binfmt
-      - qemu-user-static
-      - qemu
-      - virt-manager
       - podman-plugins
     remove:
       - firefox # default firefox removed in favor of flatpak
