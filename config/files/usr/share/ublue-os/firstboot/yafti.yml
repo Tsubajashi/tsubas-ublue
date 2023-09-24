@@ -67,82 +67,101 @@ screens:
         user: true
         system: false
       groups:
+        Core GNOME Apps:
+          description: Core system applications for the GNOME desktop environment.
+          default: true
+          packages:
+            - Calculator: org.gnome.Calculator
+            - Calendar: org.gnome.Calendar
+            - Camera: org.gnome.Snapshot
+            - Connections: org.gnome.Connections
+            - Disk Usage Analyzer: org.gnome.baobab
+            - Document Scanner: org.gnome.SimpleScan
+            - Document Viewer: org.gnome.Evince
+            - Extension Manager: com.mattjakeman.ExtensionManager
+            - Image Viewer: org.gnome.Loupe
+            - Logs: org.gnome.Logs
+            - Maps: org.gnome.Maps
+            - Photos (Organizer): org.gnome.Photos
+            - Sushi (Nautilus Previewer): org.gnome.NautilusPreviewer
+            - Text Editor: org.gnome.TextEditor
+            - Clapper: com.github.rafostar.Clapper
+            - Weather: org.gnome.Weather
         Core Apps:
           description: Core Applications
           default: true
           packages:
-          - Firefox: org.mozilla.firefox
-          - Flatseal Permissions Manager: com.github.tchx84.Flatseal
+            - Firefox: org.mozilla.firefox
+            - Flatseal Permissions Manager: com.github.tchx84.Flatseal
+            - OnlyOffice: org.onlyoffice.desktopeditors
         Gaming:
           description: "Rock and Stone!"
           default: true
           packages:
-          - Bottles: com.usebottles.bottles
-          - Heroic Games Launcher: com.heroicgameslauncher.hgl
-          - Cartridges: hu.kramo.Cartridges
-          - MangoHUD for most Flatpaks: org.freedesktop.Platform.VulkanLayer.MangoHud/23.08
-          - MangoHUD for Steam: com.valvesoftware.Steam.Utility.MangoHud/x86_64/stable
-          - MangoHUD for older Flatpaks: org.freedesktop.Platform.VulkanLayer.MangoHud/22.08
-          - Proton Updater (QT) for Steam: net.davidotek.pupgui2
-        Office:
+            - Bottles: com.usebottles.bottles
+            - Heroic Games Launcher: com.heroicgameslauncher.hgl
+            - Cartridges: hu.kramo.Cartridges
+            - MangoHUD for most Flatpaks: org.freedesktop.Platform.VulkanLayer.MangoHud/23.08
+            - MangoHUD for Steam: com.valvesoftware.Steam.Utility.MangoHud/x86_64/stable
+            - MangoHUD for older Flatpaks: org.freedesktop.Platform.VulkanLayer.MangoHud/22.08
+            - Proton Updater (QT) for Steam: net.davidotek.pupgui2
+        Other Office Apps:
           description: Bow to Capitalism
           default: false
           packages:
-          - OnlyOffice: org.onlyoffice.desktopeditors
-          - Standard Notes: org.standardnotes.standardnotes
-          - Thunderbird Email: org.mozilla.Thunderbird
+            - Standard Notes: org.standardnotes.standardnotes
+            - Thunderbird Email: org.mozilla.Thunderbird
         Streaming:
           description: Stream to the Internet
           default: false
           packages:
-          - OBS Studio: com.obsproject.Studio
-          - VkCapture for OBS: com.obsproject.Studio.Plugin.OBSVkCapture/x86_64/stable
-          - VkCapture Support for newer Flatpaks: org.freedesktop.Platform.VulkanLayer.OBSVkCapture/x86_64/23.08
-          - VkCapture Support for older Flatpaks: org.freedesktop.Platform.VulkanLayer.OBSVkCapture/x86_64/22.08
-          - Gstreamer for OBS: com.obsproject.Studio.Plugin.Gstreamer
-          - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
-          - Boatswain for Streamdeck: com.feaneron.Boatswain
+            - OBS Studio: com.obsproject.Studio
+            - VkCapture for OBS: com.obsproject.Studio.Plugin.OBSVkCapture/x86_64/stable
+            - VkCapture Support for newer Flatpaks: org.freedesktop.Platform.VulkanLayer.OBSVkCapture/x86_64/23.08
+            - VkCapture Support for older Flatpaks: org.freedesktop.Platform.VulkanLayer.OBSVkCapture/x86_64/22.08
+            - Gstreamer for OBS: com.obsproject.Studio.Plugin.Gstreamer
+            - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
+            - Boatswain for Streamdeck: com.feaneron.Boatswain
         Video/Audio Production:
           description: All the things you need to create your own content
           default: false
           packages:
-          - Audacity: org.audacityteam.Audacity
-          - Kdenlive: org.kde.kdenlive
-          - Blender: org.blender.Blender
-          - Aviator (AV1 Encoding GUI): net.natesales.Aviator
-          - Video Trimmer: org.gnome.gitlab.YaLTeR.VideoTrimmer
+            - Audacity: org.audacityteam.Audacity
+            - Kdenlive: org.kde.kdenlive
+            - Blender: org.blender.Blender
+            - Aviator (AV1 Encoding GUI): net.natesales.Aviator
+            - Video Trimmer: org.gnome.gitlab.YaLTeR.VideoTrimmer
         Video/Audio Players:
           description: For your Video/Audio Consumption needs.
           default: false
           packages:
-          - Spotify: com.spotify.Client
-          - Youtube Music: app.ytmdesktop.ytmdesktop
-          - Apple Music: sh.cider.Cider
-          - Clapper: com.github.rafostar.Clapper
-          - G4Music: com.github.neithern.g4music
+            - Spotify: com.spotify.Client
+            - Youtube Music: app.ytmdesktop.ytmdesktop
+            - Apple Music: sh.cider.Cider
+            - G4Music: com.github.neithern.g4music
         Communication:
           description: Tools to communicate and collaborate
           default: true
           packages:
-          - Discord: com.discordapp.Discord
-          - Ferdium: org.ferdium.Ferdium
+            - Discord: com.discordapp.Discord
+            - Ferdium: org.ferdium.Ferdium
         Utilities:
           description: Useful Utilities
           default: true
           packages:
-          - Video Downloader: com.github.unrud.VideoDownloader
-          - Fragments (Torrent Manager): de.haeckerfelix.Fragments
-          - Mission Center (Task Manager Alternative): io.missioncenter.MissionCenter
+            - Video Downloader: com.github.unrud.VideoDownloader
+            - Fragments (Torrent Manager): de.haeckerfelix.Fragments
+            - Mission Center (Task Manager Alternative): io.missioncenter.MissionCenter
         Admin Tools:
           description: Helper Utilities for Administration
           default: true
           packages:
-          - Cockpit Client: org.cockpit_project.CockpitClient
+            - Cockpit Client: org.cockpit_project.CockpitClient
         Development Tools:
           description: Utilities for Development
           default: true
           packages:
-          - VS Code: com.visualstudio.code
+            - VS Code: com.visualstudio.code
 
   final-screen:
     source: yafti.screen.title
