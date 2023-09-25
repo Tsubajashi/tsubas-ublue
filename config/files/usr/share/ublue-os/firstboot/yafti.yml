@@ -85,14 +85,15 @@ screens:
             - Photos (Organizer): org.gnome.Photos
             - Sushi (Nautilus Previewer): org.gnome.NautilusPreviewer
             - Text Editor: org.gnome.TextEditor
-            - Clapper: com.github.rafostar.Clapper
             - Weather: org.gnome.Weather
+            - Flatseal: com.github.tchx84.Flatseal
+            - Clapper: com.github.rafostar.Clapper
+            - G4Music: com.github.neithern.g4music
         Core Apps:
           description: Core Applications
           default: true
           packages:
             - Firefox: org.mozilla.firefox
-            - Flatseal Permissions Manager: com.github.tchx84.Flatseal
             - OnlyOffice: org.onlyoffice.desktopeditors
         Gaming:
           description: "Rock and Stone!"
@@ -111,7 +112,7 @@ screens:
           packages:
             - Standard Notes: org.standardnotes.standardnotes
             - Thunderbird Email: org.mozilla.Thunderbird
-        Streaming:
+        Streaming and Recording:
           description: Stream to the Internet
           default: false
           packages:
@@ -122,6 +123,7 @@ screens:
             - Gstreamer for OBS: com.obsproject.Studio.Plugin.Gstreamer
             - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
             - Boatswain for Streamdeck: com.feaneron.Boatswain
+            - GPU Screen Recorder: com.dec05eba.gpu_screen_recorder
         Video/Audio Production:
           description: All the things you need to create your own content
           default: false
@@ -131,14 +133,13 @@ screens:
             - Blender: org.blender.Blender
             - Aviator (AV1 Encoding GUI): net.natesales.Aviator
             - Video Trimmer: org.gnome.gitlab.YaLTeR.VideoTrimmer
-        Video/Audio Players:
-          description: For your Video/Audio Consumption needs.
+        Music Streaming Services:
+          description: For your Music Consumption needs.
           default: false
           packages:
             - Spotify: com.spotify.Client
             - Youtube Music: app.ytmdesktop.ytmdesktop
             - Apple Music: sh.cider.Cider
-            - G4Music: com.github.neithern.g4music
         Communication:
           description: Tools to communicate and collaborate
           default: true
@@ -152,14 +153,16 @@ screens:
             - Video Downloader: com.github.unrud.VideoDownloader
             - Fragments (Torrent Manager): de.haeckerfelix.Fragments
             - Mission Center (Task Manager Alternative): io.missioncenter.MissionCenter
+            - Gear Lever (AppImage Integrator): it.mijorus.gearlever
+            - Identity: org.gnome.gitlab.YaLTeR.Identity
         Admin Tools:
           description: Helper Utilities for Administration
-          default: true
+          default: false
           packages:
             - Cockpit Client: org.cockpit_project.CockpitClient
         Development Tools:
           description: Utilities for Development
-          default: true
+          default: false
           packages:
             - VS Code: com.visualstudio.code
 
