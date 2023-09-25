@@ -36,6 +36,9 @@ modules:
       - cockpit-selinux
       - cockpit-storaged
       - cockpit-system
+      - gnome-shell-extension-appindicator
+      - gnome-shell-extension-dash-to-dock
+      - gnome-shell-extension-caffeine
       - podman-plugins
     remove:
       - firefox # default firefox removed in favor of flatpak
