@@ -69,8 +69,8 @@ modules:
   - type: systemd
     system:
     enabled:
-      - tailscaled
-      - uksmd.service
+      - tailscaled.service
+      - com.system76.Scheduler.service
 
 #  - type: bore-kernel
 
