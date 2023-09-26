@@ -67,25 +67,14 @@ screens:
         user: true
         system: false
       groups:
-        Core GNOME Apps:
+        Core Apps:
           description: Core system applications for the GNOME desktop environment.
           default: true
           packages:
-            - Calculator: org.gnome.Calculator
-            - Calendar: org.gnome.Calendar
             - Camera: org.gnome.Snapshot
-            - Connections: org.gnome.Connections
-            - Disk Usage Analyzer: org.gnome.baobab
-            - Document Scanner: org.gnome.SimpleScan
-            - Document Viewer: org.gnome.Evince
-            - Extension Manager: com.mattjakeman.ExtensionManager
+            - Firefox: org.mozilla.firefox
+            - OnlyOffice: org.onlyoffice.desktopeditors
             - Image Viewer: org.gnome.Loupe
-            - Logs: org.gnome.Logs
-            - Maps: org.gnome.Maps
-            - Photos (Organizer): org.gnome.Photos
-            - Sushi (Nautilus Previewer): org.gnome.NautilusPreviewer
-            - Text Editor: org.gnome.TextEditor
-            - Weather: org.gnome.Weather
             - Flatseal: com.github.tchx84.Flatseal
             - Clapper: com.github.rafostar.Clapper
             - G4Music: com.github.neithern.g4music
@@ -93,8 +82,6 @@ screens:
           description: Core Applications
           default: true
           packages:
-            - Firefox: org.mozilla.firefox
-            - OnlyOffice: org.onlyoffice.desktopeditors
         Gaming:
           description: "Rock and Stone!"
           default: true
@@ -105,7 +92,7 @@ screens:
             - MangoHUD for most Flatpaks: org.freedesktop.Platform.VulkanLayer.MangoHud/23.08
             - MangoHUD for Steam: com.valvesoftware.Steam.Utility.MangoHud/x86_64/stable
             - MangoHUD for older Flatpaks: org.freedesktop.Platform.VulkanLayer.MangoHud/22.08
-            - Proton Updater (QT) for Steam: net.davidotek.pupgui2
+            - Proton Updater (GTK) for Steam: com.vysp3r.ProtonPlus
         Other Office Apps:
           description: Bow to Capitalism
           default: false

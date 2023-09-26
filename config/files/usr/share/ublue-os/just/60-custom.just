@@ -3,9 +3,6 @@
 
 # Include some of your custom scripts here!
 
-s76-schd-gnome:
-  xdg-open https://extensions.gnome.org/extension/4854/system76-scheduler/
-
 # Install Bazzite-Arch for Gaming
 install-bazzite-arch:
   distrobox create --nvidia --image ghcr.io/ublue-os/bazzite-arch --name bazzite-arch && \
