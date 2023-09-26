@@ -68,7 +68,7 @@ screens:
         system: false
       groups:
         Core Apps:
-          description: Core system applications for the GNOME desktop environment.
+          description: Core system applications for a full featured desktop.
           default: true
           packages:
             - Camera: org.gnome.Snapshot
@@ -78,10 +78,7 @@ screens:
             - Flatseal: com.github.tchx84.Flatseal
             - Clapper: com.github.rafostar.Clapper
             - G4Music: com.github.neithern.g4music
-        Core Apps:
-          description: Core Applications
-          default: true
-          packages:
+            - Flameshot: org.flameshot.Flameshot
         Gaming:
           description: "Rock and Stone!"
           default: true
