@@ -71,14 +71,12 @@ screens:
           description: Core system applications for a full featured desktop.
           default: true
           packages:
-            - Camera: org.gnome.Snapshot
             - Firefox: org.mozilla.firefox
             - OnlyOffice: org.onlyoffice.desktopeditors
             - Image Viewer: org.gnome.Loupe
             - Flatseal: com.github.tchx84.Flatseal
             - Clapper: com.github.rafostar.Clapper
             - G4Music: com.github.neithern.g4music
-            - Flameshot: org.flameshot.Flameshot
         Gaming:
           description: "Rock and Stone!"
           default: true
@@ -89,7 +87,7 @@ screens:
             - MangoHUD for most Flatpaks: org.freedesktop.Platform.VulkanLayer.MangoHud/23.08
             - MangoHUD for Steam: com.valvesoftware.Steam.Utility.MangoHud/x86_64/stable
             - MangoHUD for older Flatpaks: org.freedesktop.Platform.VulkanLayer.MangoHud/22.08
-            - Proton Updater (GTK) for Steam: com.vysp3r.ProtonPlus
+            - Proton Updater (QT) for Steam: net.davidotek.pupgui2
         Other Office Apps:
           description: Bow to Capitalism
           default: false
@@ -139,6 +137,7 @@ screens:
             - Mission Center (Task Manager Alternative): io.missioncenter.MissionCenter
             - Gear Lever (AppImage Integrator): it.mijorus.gearlever
             - Identity: org.gnome.gitlab.YaLTeR.Identity
+            - Flameshot: org.flameshot.Flameshot
         Admin Tools:
           description: Helper Utilities for Administration
           default: false
