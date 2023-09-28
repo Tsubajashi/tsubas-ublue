@@ -40,6 +40,7 @@ modules:
       - podman-plugins
       - tailscale
       - system76-scheduler
+      - btop
 #      - libcap-ng-devel
 #      - procps-ng-devel
 #      - uksmd-rawhide
