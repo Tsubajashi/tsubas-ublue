@@ -41,6 +41,7 @@ modules:
       - tailscale
       - btop
       - libadwaita
+      - google-noto-cjk-fonts
 #      - system76-scheduler
 #      - libcap-ng-devel
 #      - procps-ng-devel
@@ -48,6 +49,7 @@ modules:
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
+      - google-noto-sans-cjk-vf-fonts
 
   - type: bling # configure what to pull in from ublue-os/bling
     install:
