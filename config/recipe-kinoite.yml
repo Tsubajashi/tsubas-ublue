@@ -40,7 +40,6 @@ modules:
 
   - type: bling # configure what to pull in from ublue-os/bling
     install:
-      - fonts # selection of common good free fonts
       - justfiles
       - ublue-os-wallpapers
 
