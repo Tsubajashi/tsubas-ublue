@@ -9,4 +9,8 @@ ublue_variants:
       - label: tsubas-kinoite
         info: Tsubas-kinoite builds (KDE)
       - label: tsubas-kinoite-nvidia
-        info: Tsubas-Ublue Nvidia builds (KDE)
+        info: Tsubas-kinoite Nvidia builds (KDE)
+      - label: tsubas-onyx
+        info: Tsubas-onyx builds (Budgie)
+      - label: tsubas-onyx-nvidia
+        info: Tsubas-onyx Nvidia builds (Budgie)
