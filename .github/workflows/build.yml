@@ -41,6 +41,8 @@ jobs:
         recipe:
           - recipe.yml
           - recipe-nvidia.yml
+          - recipe-kinoite.yml
+          - recipe-kinoite-nvidia.yml
 # !!!
 
     steps:

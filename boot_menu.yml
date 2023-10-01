@@ -3,6 +3,10 @@ ublue_variants:
     ks: /kickstart/ublue-os.ks
     flavors:
       - label: tsubas-ublue
-        info: Tsubas-Ublue builds
+        info: Tsubas-Ublue builds (XFCE)
       - label: tsubas-ublue-nvidia
-        info: Tsubas-Ublue Nvidia builds
+        info: Tsubas-Ublue Nvidia builds (XFCE)
+      - label: tsubas-kinoite
+        info: Tsubas-kinoite builds (KDE)
+      - label: tsubas-kinoite-nvidia
+        info: Tsubas-Ublue Nvidia builds (KDE)
