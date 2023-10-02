@@ -38,6 +38,7 @@ modules:
       - tailscale
       - btop
       - libadwaita
+      - mesa-libGLU
       - google-noto-cjk-fonts
     remove:
       - firefox # default firefox removed in favor of flatpak
