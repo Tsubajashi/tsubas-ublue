@@ -48,6 +48,7 @@ modules:
     install:
       - justfiles
       - ublue-os-wallpapers
+      - dconf-update-service
 
   - type: yafti
     custom-flatpaks:
