@@ -45,8 +45,6 @@ jobs:
           - recipe-kinoite-nvidia.yml
           - recipe-onyx.yml
           - recipe-onyx-nvidia.yml
-          - recipe-silverblue.yml
-          - recipe-silverblue-nvidia.yml
 # !!!
 
     steps:
