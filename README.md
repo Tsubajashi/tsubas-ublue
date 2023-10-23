@@ -15,9 +15,9 @@ To rebase an existing Silverblue/Kinoite installation to the latest build:
   ```
   sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/tsubajashi/tsubas-kinoite:latest
   ```
-  Budgie:
+  GNOME:
   ```
-  sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/tsubajashi/tsubas-onyx:latest
+  sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/tsubajashi/tsubas-silverblue:latest
   ```
 - If Nvidia:
   XFCE:
@@ -28,9 +28,9 @@ To rebase an existing Silverblue/Kinoite installation to the latest build:
   ```
   sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/tsubajashi/tsubas-kinoite-nvidia:latest
   ```
-  Budgie:
+  GNOME:
   ```
-  sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/tsubajashi/tsubas-onyx-nvidia:latest
+  sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/tsubajashi/tsubas-silverblue-nvidia:latest
   ```
 - Reboot to complete the rebase:
   ```
