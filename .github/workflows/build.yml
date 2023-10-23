@@ -50,7 +50,7 @@ jobs:
     steps:
       # Checkout push-to-registry action GitHub repository
       - name: Maximize build space
-        uses: AdityaGarg8/remove-unwanted-software@v2
+        uses: AdityaGarg8/remove-unwanted-software@v1
         with:
           remove-dotnet: 'true'
           remove-android: 'true'
