@@ -43,14 +43,14 @@ jobs:
           - recipe-nvidia.yml
           - recipe-kinoite.yml
           - recipe-kinoite-nvidia.yml
-          - recipe-onyx.yml
-          - recipe-onyx-nvidia.yml
+          - recipe-silverblue.yml
+          - recipe-silverblue-nvidia.yml
 # !!!
 
     steps:
       # Checkout push-to-registry action GitHub repository
       - name: Maximize build space
-        uses: AdityaGarg8/remove-unwanted-software@v1
+        uses: AdityaGarg8/remove-unwanted-software@v2
         with:
           remove-dotnet: 'true'
           remove-android: 'true'
