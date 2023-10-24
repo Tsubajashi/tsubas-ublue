@@ -33,6 +33,7 @@ modules:
       - virt-install
       - virt-manager
       - virt-viewer
+      - pavucontrol
       - gnome-shell-extension-pop-shell
       - gnome-shell-extension-caffeine
       - gnome-shell-extension-appindicator
