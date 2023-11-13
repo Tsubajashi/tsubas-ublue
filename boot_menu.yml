@@ -3,7 +3,7 @@ ublue_variants:
     ks: /kickstart/ublue-os.ks
     flavors:
       - label: tsubas-ublue
-        info: Tsubas-Ublue builds (XFCE)
+        info: Tsubas-Ublue builds (BUDGIE)
       - label: tsubas-kinoite
         info: Tsubas-kinoite builds (KDE)
       - label: tsubas-silverblue
@@ -12,7 +12,7 @@ ublue_variants:
     ks: /kickstart/ublue-os-nvidia.ks
     flavors:
       - label: tsubas-ublue-nvidia
-        info: Tsubas-Ublue Nvidia builds (XFCE)
+        info: Tsubas-Ublue Nvidia builds (BUDGIE)
       - label: tsubas-silverblue-nvidia
         info: Tsubas-silverblue Nvidia builds (GNOME)
       - label: tsubas-kinoite-nvidia
