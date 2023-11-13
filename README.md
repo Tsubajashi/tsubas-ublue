@@ -7,7 +7,8 @@
 To rebase an existing Silverblue/Kinoite installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  XFCE:
+- 
+  Budgie:
   ```
   sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/tsubajashi/tsubas-ublue:latest
   ```
@@ -20,7 +21,8 @@ To rebase an existing Silverblue/Kinoite installation to the latest build:
   sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/tsubajashi/tsubas-silverblue:latest
   ```
 - If Nvidia:
-  XFCE:
+- 
+  Budgie:
   ```
   sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/tsubajashi/tsubas-ublue-nvidia:latest
   ```
