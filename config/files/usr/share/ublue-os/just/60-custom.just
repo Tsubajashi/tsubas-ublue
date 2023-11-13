@@ -4,8 +4,17 @@
 # Include some of your custom scripts here!
 
 # Install Bazzite-Arch for Gaming
-install-bazzite-arch:
-  distrobox create --nvidia --image ghcr.io/ublue-os/bazzite-arch --name bazzite-arch && \
+install-bazzite-arch-qt:
+  distrobox-create --unshare-netns --nvidia --image ghcr.io/ublue-os/bazzite-arch --name bazzite-arch -Y && \
+  echo 'Exporting applications...' && \
+  distrobox-enter -n bazzite-arch -- 'bash -c "sudo locale-gen && distrobox-export --app steam && distrobox-export --app lutris && distrobox-export --app protontricks && mkdir -p $HOME/.steam && distrobox-export --bin /usr/bin/steamcmd --export-path ~/.steam && mv $HOME/.steam/steamcmd $HOME/.steam/steamcmd.sh"' && \
+  echo 'Starting Steam...' && \
+  distrobox-enter -n bazzite-arch -- '  /usr/bin/bazzite-steam-runtime --silent &>/dev/null &' && \
+  echo 'Finalizing...' && \
+  sleep 10
+
+install-bazzite-arch-gtk:
+  distrobox-create --unshare-netns --nvidia --image ghcr.io/ublue-os/bazzite-arch-gnome --name bazzite-arch -Y && \
   echo 'Exporting applications...' && \
   distrobox-enter -n bazzite-arch -- 'bash -c "sudo locale-gen && distrobox-export --app steam && distrobox-export --app lutris && distrobox-export --app protontricks && mkdir -p $HOME/.steam && distrobox-export --bin /usr/bin/steamcmd --export-path ~/.steam && mv $HOME/.steam/steamcmd $HOME/.steam/steamcmd.sh"' && \
   echo 'Starting Steam...' && \
