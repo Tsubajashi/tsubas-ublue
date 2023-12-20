@@ -23,20 +23,6 @@ screens:
         - run: flatpak remove --system --noninteractive --all
         - run: flatpak remote-add --if-not-exists --system flathub https://flathub.org/repo/flathub.flatpakrepo
         - run: flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
-  configure-bazzite-arch:
-    source: yafti.screen.package
-    values:
-      title: Setting up Bazzite Arch (This can take a long time)
-      condition:
-        run: grep -qvz "bazzite-arch" <<< $(distrobox list)
-      show_terminal: true
-      package_manager: yafti.plugin.run
-      groups:
-        Install Bazzite Arch:
-          description: Sets up a custom Arch Linux OCI in Distrobox that Steam, Lutris, and other gaming workloads will be run inside of.
-          default: true
-          packages:
-          - Install Bazzite Arch: just --unstable install-bazzite-arch-gtk
   check-system-flathub:
     source: yafti.screen.consent
     values:
@@ -84,6 +70,7 @@ screens:
             - Bottles: com.usebottles.bottles
             - Heroic Games Launcher: com.heroicgameslauncher.hgl
             - Cartridges: hu.kramo.Cartridges
+            - Steam: com.valvesoftware.Steam
             - MangoHUD for most Flatpaks: org.freedesktop.Platform.VulkanLayer.MangoHud/23.08
             - MangoHUD for Steam: com.valvesoftware.Steam.Utility.MangoHud/x86_64/stable
             - MangoHUD for older Flatpaks: org.freedesktop.Platform.VulkanLayer.MangoHud/22.08
