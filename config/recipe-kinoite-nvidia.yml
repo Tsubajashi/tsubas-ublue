@@ -28,7 +28,8 @@ modules:
       - libadwaita
       - mesa-libGLU
       - easyeffects
-      - google-noto-cjk-fonts
+      - google-noto-sans-cjk-fonts
+      - google-noto-serif-cjk-fonts
       - lsd
       - virt-install
       - virt-manager
