@@ -31,6 +31,7 @@ modules:
       - google-noto-sans-cjk-fonts
       - google-noto-serif-cjk-fonts
       - lsd
+      - neovim
       - virt-install
       - virt-manager
       - virt-viewer
