@@ -32,6 +32,7 @@ modules:
       - google-noto-serif-cjk-fonts
       - lsd
       - helix
+      - cockpit-bridge
       - virt-install
       - virt-manager
       - pavucontrol
