@@ -4,7 +4,7 @@ name: tsubas-ublue
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/onyx-main
+base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 39 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -31,11 +31,9 @@ modules:
       - google-noto-sans-cjk-fonts
       - google-noto-serif-cjk-fonts
       - lsd
-      - neovim
       - helix
       - virt-install
       - virt-manager
-      - virt-viewer
       - pavucontrol
     remove:
       - firefox # default firefox removed in favor of flatpak

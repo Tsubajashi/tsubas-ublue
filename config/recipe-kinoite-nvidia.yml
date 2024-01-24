@@ -31,11 +31,9 @@ modules:
       - google-noto-sans-cjk-fonts
       - google-noto-serif-cjk-fonts
       - lsd
-      - neovim
       - helix
       - virt-install
       - virt-manager
-      - virt-viewer
       - pavucontrol
     remove:
       - firefox # default firefox removed in favor of flatpak
