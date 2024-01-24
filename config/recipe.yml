@@ -46,6 +46,7 @@ modules:
       - ublue-os-wallpapers
       - ublue-update
       - dconf-update-service
+      - container-tools # installs container-related tools onto /usr/bin: kind, kubectx, docker-compose and kubens
 
   - type: yafti
     custom-flatpaks:
